@@ -1,0 +1,42 @@
+.container{
+    width: 600px;
+    height: 300px;
+    background-color: skyblue;
+    display: grid;
+    /* grid-template-rows: 60px 60px 60px 60px 60px;
+grid-template-columns: 200px 200px 200px ; */
+    grid-template-rows: repeat(5,1fr);
+    /* grid-template-rows: 1fr 1fr 1fr 1fr 1fr; can also write this */
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 10px;
+    column-gap: 30px;
+    justify-items: center;
+}
+
+.item{
+    width: 100px;
+    height: 50px;
+    background-color: greenyellow;
+    border:2px solid black;
+    text-align: center;
+
+}
+
+.one{
+    /* grid-column-start: 1;   methods
+    grid-column-end: 4;     */
+
+    /* grid-column: 1/4; */
+
+    grid-column: 1/span 3;
+    justify-self: start;
+}
+
+.two{
+    /* grid-row-start: 1;
+    grid-row-end:3; */
+
+    /* grid-row: 1/3; */
+
+    grid-row: 1/span 2;
+}

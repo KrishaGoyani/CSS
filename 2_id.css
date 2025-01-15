@@ -1,0 +1,109 @@
+*{
+    font-family: 'Courier New';
+}
+/* if i write !important it never change  */
+h1{
+    background-color:darkkhaki !important;
+} 
+h1,h3{
+    color:#b92b27;
+}
+#login{
+    background-color: white;
+}
+#signup{
+    background-color: #b92b27;
+    color: white;
+}
+.upvote{
+    background-color: green;
+}
+/* descendant selector */
+p a{
+    color: purple;
+    background-color: antiquewhite;
+}
+
+nav ul li a{
+    color: hotpink;
+}
+
+/* Adjacent Sibling Combinator */
+p + h3{
+    text-decoration: underline;
+}
+
+.upvote + button{
+    background-color:cornflowerblue ;
+}
+
+/* Chld combinator */
+div > input{
+    /* color: white; */
+    background-color: violet;
+}
+
+/* Attribute selector */
+input[type="text"]{
+    color: rgb(217, 47, 47) ;
+}
+
+input[type="password"]{
+    color: greenyellow ;
+}
+input[type]{
+    background-color: bisque;
+}
+
+/* psq */
+#myId p{
+    color: green;
+}
+
+div p{
+    color: #b92b27;
+}
+
+div[id="kk"] p{
+    color: blueviolet;
+}
+
+/* pseudo class  */
+button:hover{ /*jyare cursor lai jaie tyare font & bg color change thy*/
+    background-color: cadetblue;
+    color: palegoldenrod;
+}
+h3:hover{
+    text-decoration: dashed underline;
+}
+
+button:active{  /*jyare click karie tyare bgcolor change thy*/
+    background-color: hotpink;
+}
+
+p:active{
+    font-weight: bold;
+    color: chocolate;
+}
+
+input[type="radio"]:checked + label{
+    color: red;
+    font-weight: bold;
+}
+
+div:nth-of-type(2n){
+    background-color: cyan;
+}
+
+h1::first-letter{
+    color: blueviolet;
+}
+
+p::first-line{
+    color: blue;
+}
+
+p::selection{/*if i select any part of paragraph if shows that bg color */
+    background-color: rgb(241, 103, 103);
+    color: aliceblue;
+}

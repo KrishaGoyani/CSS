@@ -1,0 +1,24 @@
+/* h2{
+    display: inline;
+    background-color: aquamarine;
+}
+span{
+    display: block;
+    background-color: cadetblue;
+} */
+
+span{
+    /* background-color: lime; */
+    border: 2px solid green;
+    height: 100px; /*height & width are not apply on this span*/
+    width: 200px;
+    padding: 50px; /*margin & padding set only left and right*/
+    margin: 50px;
+}
+div{
+    border: 2px solid green;
+    height: 100px; 
+    width: 200px;
+    padding: 50px; 
+    margin: 50px;
+}
