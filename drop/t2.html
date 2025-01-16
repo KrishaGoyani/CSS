@@ -29,3 +29,184 @@
   </nav>
 </body>
 </html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Interface</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f8f8f8;
+    }
+
+    .search-container {
+      width: 400px;
+      position: relative;
+    }
+
+    .search-bar {
+      width: 100%;
+      padding: 10px 15px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 25px;
+      outline: none;
+      box-shadow: none;
+    }
+
+    .search-results {
+      margin-top: 5px;
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+      position: absolute;
+      width: 100%;
+      z-index: 10;
+      display: none;
+    }
+
+    .search-results.active {
+      display: block;
+    }
+
+    .search-item {
+      padding: 10px 15px;
+      border-bottom: 1px solid #eee;
+      cursor: pointer;
+    }
+
+    .search-item:last-child {
+      border-bottom: none;
+    }
+
+    .search-item:hover {
+      background-color: #f0f0f0;
+    }
+
+    .search-item b {
+      color: #007bff;
+    }
+  </style>
+</head>
+<body>
+  <div class="search-container">
+    <input
+      type="text"
+      class="search-bar"
+      placeholder="Search"
+      oninput="showResults(this.value)"
+    />
+    <div class="search-results" id="searchResults">
+      <div class="search-item">Regular House <b>Cleaning</b></div>
+      <div class="search-item">Deep <b>Cleaning</b></div>
+      <div class="search-item">Move in move out <b>Cleaning</b></div>
+      <div class="search-item">Post Construction <b>Cleaning Up</b></div>
+    </div>
+  </div>
+
+  <script>
+    function showResults(query) {
+      const results = document.getElementById("searchResults");
+      if (query.trim() !== "") {
+        results.classList.add("active");
+      } else {
+        results.classList.remove("active");
+      }
+    }
+  </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Interface</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f8f8f8;
+    }
+
+    .search-container {
+      width: 400px;
+      position: relative;
+    }
+
+    .search-bar {
+      width: 100%;
+      padding: 10px 15px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 25px;
+      outline: none;
+    }
+
+    .search-results {
+      margin-top: 5px;
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+      position: absolute;
+      width: 100%;
+    }
+
+    .search-item {
+      padding: 10px 15px;
+      border-bottom: 1px solid #eee;
+      cursor: pointer;
+    }
+
+    .search-item:last-child {
+      border-bottom: none;
+    }
+
+    .search-item:hover {
+      background-color: #f0f0f0;
+    }
+
+    .search-item b {
+      color: #007bff;
+    }
+
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="search-container">
+    <input
+      type="text"
+      class="search-bar"
+      placeholder="Search"
+      onfocus="this.nextElementSibling.classList.remove('hidden')"
+      onblur="this.nextElementSibling.classList.add('hidden')"
+    />
+    <div class="search-results hidden">
+      <div class="search-item">Regular House <b>Cleaning</b></div>
+      <div class="search-item">Deep <b>Cleaning</b></div>
+      <div class="search-item">Move in move out <b>Cleaning</b></div>
+      <div class="search-item">Post Construction <b>Cleaning Up</b></div>
+    </div>
+  </div>
+</body>
+</html>
