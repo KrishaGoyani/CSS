@@ -1,140 +1,275 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link  rel="stylesheet" href="t1.css">
+    <link rel="stylesheet" href="t1.css">
+    <link rel="stylesheet" href="media.css">
 </head>
-<body>
-    <!-- NAVBAR -->
-<header>
-    <div class="navbar">
-        <div class="country">
-            <img src="./public/vuesax-bold-locationx 1.png" alt="flag">
-            <p> Austin, texas <img src="./public/arrow-down.png"></p>
-        </div>
-        <div class="logo">
-            <div><img src="./public/Gleam.png" alt="logo"></div>
-            <nav>
-                <a href="#">Cleaning Services</a>
-                <a href="#">Cleaning Tips</a>
-                <a href="#">About Us</a>
-                <a href="#">Contact Us</a>
-            </nav>
-        </div>
-        <div class="nav">
-            <img src="./public/search-normal.png">
-            <img src="./public/heart.png">
-            <img src="./public/notification.png">
-            <img src="./public/profile.png">
-        </div>
-    </div>
-</header>
 
-    <!--CONTAINER 1 -->
-    <div class="container-1">
-        <div class="container header-section flex"></div>
-        <div class="header-left">
-        <div class="text1">
-            <h3>Transform Your <br/>Space with <span style="color: #0071B4;">Expert</br>Cleaning Services</span></h3>
-            <p>Discover expert cleaning solutions for your home.<br/>
-                We provide top-notch, reliable, and efficient services<br/>tailored to your needs.</p>
+<body>
+<!-- NAVBAR -->
+    <nav>
+        <div class="container main-nav flex">
+            <div class="country flex">
+                <img src="./public/vuesax-bold-locationx 1.png" alt="flag">
+                <p> Austin, texas <img src="./public/arrow-down.png"></p>
+            </div>
+            <a href="#" class="company-logo">
+                <img src="./public/Gleam.png" alt="company logo">
+            </a>
+            <div class="nav-links" id="nav-links">
+                <ul class="flex">
+                    <li><a href="#"><img src="./public/search-normal.png"></a></li>
+                    <li><a href="#"><img src="./public/heart.png"></a></li>
+                    <li><a href="#"><img src="./public/notification.png"></a></li>
+                    <li><a href="#"><img src="./public/profile.png"></a></li>
+                    <li><a href="#"><img src="./public/menu.png" class="menu" id="menu"></a></li>
+                </ul>
+            </div>
         </div>
+        <div class="container sub-nav flex">
+            <ul class="flex">
+                <li><a href="#" class="hover-link">Cleaning Services<img src="./public/arrow-down.png"></a></li>
+                <li><a href="#" class="hover-link">Cleaning Tips</a></li>
+                <li><a href="#" class="hover-link">About Us</a></li>
+                <li><a href="#" class="hover-link">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav> 
+ 
+<!-- HEADER -->
+    <div class="container header-section flex">
+        <div class="header-left flex">
+            <h3>Transform Your <br />Space with <span style="color: #0071B4;">Expert</br>Cleaning Services</span></h3>
+            <p>Discover expert cleaning solutions for your home.<br />
+                We provide top-notch, reliable, and efficient services<br />tailored to your needs.</p>
         </div>
         <div class="header-right">
-        <img src="./public/img1.jpg" alt="cleaning_img">
+            <img src="./public/img1.jpg" alt="cleaning_img">
+        </div>
+    </div>
+
+<!-- WORK -->
+    <div class="contariner work flex">
+        <h3>How does it work?</h3>
+        <p>Sub text content goes here in 2 or 3 lines, libero justo egestas sem vitae<br />pellentesque potenti a.
+            Sagittis feugiat sollicitudin turpis erat</p>
+    </div>
+
+    <div class="container main-feature flex">
+        <div class="features-area1 flex">
+            <div class="features-card">
+                <img src="./public/Ellipse 5.png" alt="">
+                <h3>1.Select your services</h3>
+                <p>Explore our comprehensive list of handyman services tailored for your home, office, or restaurant.
+                    Choose the specific services that match your maintenance and repair needs.</p>
+            </div>
+            <div class="features-card" id="second-pic">
+                <img src="./public/Vector.png" alt="">
+                <h3>2. One time or subscribe</h3>
+                <p>Faucibus suspendisse integer sed adipiscing orci orci. Porta et ut et interdum dolor sit nisl
+                    commodo. Quam ornare varius cras amet risus mattis. Erat placerat massa mi a proin.</p>
+            </div>
+            <div class="features-card">
+                <img src="./public/Vector (1).png" alt="">
+                <h3>3. Select your preferred Provider</h3>
+                <p>Lobortis pellentesque euismod id in quis ut. Quis sagittis semper eu facilisi senectus nulla. Fames
+                    nisl id mi aliquet neque maecenas sed. Eget libero arcu mattis in in arcu erat. Turpis.</p>
+            </div>
+        </div>
+
+        <div class="features-area2 flex">
+            <div class="features-card">
+                <img src="./public/Vector (1).png" alt="">
+                <h3>4. Rate & Review </h3>
+                <p>Sodales morbi eleifend faucibus ipsum malesuada. Vel amet enim varius gravida pulvinar augue sed
+                    massa. Egestas a sed in donec. Enim diam volutpat risus natoque.</p>
+            </div>
+            <div class="features-card ">
+                <img src="./public/Vector (3).png" alt="">
+                <h3>5. Receive updates</h3>
+                <p>Auctor ullamcorper nisl vel consequat duis sapien. Ac nibh at neque non aliquam ipsum condimentum
+                    elementum. In massa sit erat iaculis ipsum. Ultrices malesuada lectus.</p>
+            </div>
+            <div class="features-card ">
+                <img src="./public/Vector (2).png" alt="">
+                <h3>6. Make payment</h3>
+                <p>Pulvinar faucibus vel leo rhoncus dignissim sit sed lorem. Nec pretium viverra phasellus enim dui
+                    adipiscing senectus.</p>
+            </div>
+        </div>
+    </div>
+<!-- CATEGORIES -->
+    <div class="container categories flex">
+        <div class="categories-text">
+            <h3>Wide range of categories</h3>
+            <h6>Explore Our Extensive Cleaning Services for Every Space</h6>
+        </div>
+        <div class="card flex">
+            <a href=""><img src="./public/Card 1.png"></a>
+            <a href=""><img src="./public/Card 6.png"></a>
+            <a href=""><img src="./public/Card 7.png"></a>
+            <a href=""><img src="./public/Card 8.png"></a>
+        </div>
+    </div>
+<!-- WHY -->
+    <div class="container why">
+        <div class="text flex">
+            <h3>Why choose Gleam Your Casa</h3>
+            <h6>Sub text content goes here in 2 or 3 lines, libero justo egestas sem vitae<br />pellentesque potenti a.
+                Sagittis feugiat sollicitudin turpis erat</h6>
+        </div>
+
+        <section class="container services">
+            <div class="service-card">
+                <a href="#"><img src="./public/Rectangle 42410.png"></a>
+                <h5>Book a Clean Online = Anytime, Anywhere </h5>
+                <p>Whether you need certain rooms done or the entire house deep cleaned, The Maids has a clean to fit
+                    your needs and budget. Find The Maids near you, get a free quote and book your service online 24/7.
+                    Pick your package, select your day and preferred time, book your clean</p>
+            </div>
+            <div class="service-card">
+                <a href="#"><img src="./public/pexels-liliana-drew-9462614 1.png"></a>
+                <h5>Trained Teams = Faster Cleans</h5>
+                <p>Flexible team sizes to meet your needs. Our teams can get in and out of your home faster with a more
+                    thorough clean. The only maid service backed by Mr. Clean®, our highly trained teams are bonded,
+                    insured, and right around the corner.
+                </p>
+            </div>
+            <div class="container service-card">
+                <a href="#"><img src="./public/pexels-liliana-drew-9462307 1.png"></a>
+                <h5>Your Custom Cleans = Affordable Routine</h5>
+                <p>Our 22-Step Cleaning Process cleans your home top to bottom and guards against germs and allergens.
+                    We treat your home like it’s our own. It’s more than a job to us — it’s our calling.
+                </p>
+            </div>
+        </section>
+    </div>
+<!-- REVIEW -->
+    <div class="container review flex">
+        <div class="text1 ">
+            <h3>Over 1000+ happy customers</h3>
+            <p>Sub text content goes here in 2 or 3 lines, libero justo egestas sem vitae<br /> pellentesque potenti a.
+                Sagittis feugiat sollicitudin turpis erat</p>
+        </div>
+        <div class="ratings flex">
+            <div class="rating">
+                <img src="./public/Frame 20.png">
+                <p>Really good service! Claudia is very <br />nice and funny. A great professional as <br />well. So
+                    happy with my room!</p>
+                <p class="user">- Marlyn</p>
+            </div>
+            <div class="rating">
+                <img src="./public/Frame 20.png">
+                <p>Really good service! Claudia is very<br /> nice and funny. A great professional as<br /> well. So
+                    happy with my room!</p>
+                <p class="user">- Samy</p>
+            </div>
+            <div class="rating">
+                <img src="./public/Frame 20.png">
+                <p>Really good service! Claudia is very <br />nice and funny. A great professional as <br />well. So
+                    happy with my room!</p>
+                <p class="user">- Ellen</p>
+            </div>
+        </div>
+    </div>
+<!-- TIPS -->
+<section class="container blog-section">
+        <p>Cleaning tips from professionals</p>
+        <div class="container blog-container flex">
+            <div class="blog-card">
+                <img src="./public/pexels-shvetsa-5217897 1.png" alt="Cleaning Products">
+                <h3>Cleaning tips, tricks & hacks</h3>
+                <p>Professional cleaning solutions for Seattle's rainy climate</p>
+                <span>12 June 2024 • 5 mins read</span>
+            </div>
+            <div class="blog-card">
+                <img src="./public/pexels-cottonbro-9245150 1.png" alt="Professional Cleaner">
+                <h3>Cleaning tips, tricks & hacks</h3>
+                <p>Professional cleaning solutions for Seattle's rainy climate</p>
+                <span>12 June 2024 • 5 mins read</span>
+            </div>
+            <div class="blog-card">
+                <img src="./public/pexels-karolina-grabowska-4239031 1.png" alt="Cleaning Mirror">
+                <h3>Cleaning tips, tricks & hacks</h3>
+                <p>Professional cleaning solutions for Seattle's rainy climate</p>
+                <span>12 June 2024 • 5 mins read</span>
+            </div>
+        </div>
+        <button class="view-more">View more Blogs</button>
+</section>
+
+<!-- GLEAM -->
+<div class="container gleam">
+    <div class="inside-gleam flex">
+    <p>Gleam your casa is available in</p>
+    <h4>United states</h4>
+    <span>Kirkland</span>
+    </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+<div class="container footer-container">
+    <div class="f-section flex">
+      <div class="footer-section about-us">
+        <h4>About Us</h4>
+        <ul>
+          <li><a href="#">Who we are</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer-section need-help">
+        <h4>Need Help?</h4>
+        <ul>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Privacy policy</a></li>
+          <li><a href="#">Refund policy</a></li>
+          <li><a href="#">Terms of service</a></li>
+          <li><a href="#">FAQs</a></li>
+        </ul>
+      </div>
+      <div class="icons flex">
+        <div class="social-media">
+            <a href="#"><img src="./public/ln.png"></a>
+            <a href="#"><img src="./public/insta.png"></a>
+        </div>
+        <div class="payment-icons" >
+            <img src="./public/Group 136190.png" alt="Mastercard">
+            <img src="./public/Group 136192.png" alt="Paypal">
+            <img src="./public/Group 136193.png" alt="American Express">
+            <img src="./public/Group 136194.png" alt="Apple Pay">
+            <img src="./public/Group 136195.png" alt="Pay">
+        </div>
+        <div class="footer-section get-in-touch flex">
+            <h4>Get in touch</h4>
+            <p>Reliable at-home services for all your cleaning needs</p>
+            <div class="buttons">
+                <button class="view-more">Contact Us</button>
+                <button class="contact"><img src="./public/icons8-whatsapp 1.png">+34 638 11 53 14</button>
+            </div>
+        </div>
+    </div>
+    </div>
+    
+    <div class="footer-section newsletter">
+        <h4>Sign up to our newsletter</h4>
+        <form>
+            <input type="email" class="mail" placeholder="Enter your email address" />
+            <button type="submit" class="view-more">Sign up</button>
+        </form>
+        <div class="footer-bottom">
+            <p>Copyright © 2024, GleamYourCasa</p>
         </div>
     </div>
     
-    <!-- <div class="container-2">
-        <div class="box flex" id="box-1"><img src="./public/Ellipse 5.png">
-        <h5>Select your services</h5><p>Explore our comprehensive list of handyman services tailored for your home, office, or restaurant. Choose the specific services that match your maintenance and repair needs.</p></div>
+</div>
+    
+</footer>
 
-        <div class="box" id="box-2"><img src="./public/Ellipse 5.png"></div>
-        
-        <div class="box" id="box-3"><img src="./public/Ellipse 5.png"></div>
-        <div class="box" id="box-4"><img src="./public/Ellipse 5.png"></div>
-        <div class="box" id="box-5"><img src="./public/Ellipse 5.png"></div>
-        <div class="box" id="box-6"><img src="./public/Ellipse 5.png"></div>
-    </div> -->
-    <div class="features-area1 flex1">
-        <div class="features-card flex">
-            <img src="./public/Ellipse 5.png" alt="">
-            <h3>1.Select your services</h3>
-            <p>Explore our comprehensive list of handyman services tailored for your home, office, or restaurant. Choose the specific services that match your maintenance and repair needs.</p>
-        </div>
-        <div class="features-card flex">
-            <img src="./public/Ellipse 5.png" alt="">
-            <h3>2. Select your services</h3>
-            <p>Explore our comprehensive list of handyman services tailored for your home, office, or restaurant. Choose the specific services that match your maintenance and repair needs.</p>
-        </div>
-        <div class="features-card flex">
-            <img src="./public/Ellipse 5.png" alt="">
-            <h3>3. Select your services</h3>
-            <p>Explore our comprehensive list of handyman services tailored for your home, office, or restaurant. Choose the specific services that match your maintenance and repair needs.</p>
-        </div>
-    </div>
-    <div class="features-area2 flex1">
-    <div class="features-card flex">
-        <img src="./public/Ellipse 5.png" alt="">
-        <h3>4. Select your services</h3>
-        <p>Explore our comprehensive list of handyman services tailored for your home, office, or restaurant. Choose the specific services that match your maintenance and repair needs.</p>
-    </div>
-    <div class="features-card ">
-        <img src="./public/Ellipse 5.png" alt="">
-        <h3>5. Select your services</h3>
-        <p>Explore our comprehensive list of handyman services tailored for your home, office, or restaurant. Choose the specific services that match your maintenance and repair needs.</p>
-    </div>
-    <div class="features-card ">
-        <img src="./public/Ellipse 5.png" alt="">
-        <h3>6. Select your services</h3>
-        <p>Explore our comprehensive list of handyman services tailored for your home, office, or restaurant. Choose the specific services that match your maintenance and repair needs.</p>
-    </div>
-    </div>
-    <footer>
-        <div class="footer-container">
-          <div class="footer-section about-us">
-            <h4>About Us</h4>
-            <ul>
-              <li><a href="#">Who we are</a></li>
-              <li><a href="#">Blog</a></li>
-            </ul>
-          </div>
-          <div class="footer-section need-help">
-            <h4>Need Help?</h4>
-            <ul>
-              <li><a href="#">Contact Us</a></li>
-              <li><a href="#">Privacy policy</a></li>
-              <li><a href="#">Refund policy</a></li>
-              <li><a href="#">Terms of service</a></li>
-              <li><a href="#">FAQs</a></li>
-            </ul>
-          </div>
-          <div class="footer-section newsletter">
-            <h4>Sign up to our newsletter</h4>
-            <form>
-              <input type="email" class="secondary-button styled-input" placeholder="Enter your email address" />
-              <button type="submit">Sign up</button>
-            </form>
-          </div>
-          <div class="footer-section get-in-touch">
-            <h4>Get in touch</h4>
-            <p>Reliable at-home services for all your cleaning needs</p>
-            <button>Contact us</button>
-            <button><a href="tel:+34638115314">+34 638 11 53 14</a></button>
-            <div class="payment-icons">
-              <img src="mastercard.png" alt="Mastercard">
-              <img src="paypal.png" alt="Paypal">
-              <img src="amex.png" alt="American Express">
-              <img src="apple-pay.png" alt="Apple Pay">
-              <img src="pay.png" alt="Pay">
-            </div>
-          </div>
-        </div>
-        <div class="footer-bottom">
-          <p>Copyright © 2024, GleamYourCasa</p>
-        </div>
-      </footer>
 </body>
+
 </html>

@@ -1,0 +1,69 @@
+@media screen and (max-width:376px) {
+    *{
+        width: 100vw;
+        /* padding-left: 20px; */
+    }
+    .nav-links,.country , .sub-nav{
+        display: none;
+    }
+    #menu{
+        display: block;
+        margin-right: 80px;
+    }
+    .company-logo{
+        align-items:flex-start ;
+    }
+.header-section{
+    align-items: center;
+    flex-direction: column;
+}
+    .header-left{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .header-left h3{
+        font-size: 32px;
+        text-align: center;
+        line-height: normal;
+    }
+    .header-left p{
+        margin-top: 1rem;
+        line-height: normal;
+        font-size: 16px;
+        text-align: center;
+
+    }
+    .header-right img{
+        align-items: center;
+        max-width: 375px;
+        padding-left: 50px;
+    }
+
+    .work{
+        text-align: center;
+    }
+    .main-feature{
+        margin: 0;
+    }
+    .features-area1, .features-area2{
+        flex-direction: column;
+    }
+    .features-card{
+        max-width: vw;
+        margin-right: 40px;
+    }
+    .card img{
+        max-width: min-content;
+    }
+    .card{
+        /* min-width: calc(20% - 10px); */
+        /* flex-grow: 3; */
+    }
+    .review{
+        display: none;
+    }
+    .services{
+        /* padding: ; */
+       
+    }
+}

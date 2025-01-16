@@ -1,0 +1,97 @@
+/* Base styles are already in t1.css; this is the new addition for responsiveness */
+
+@media only screen and (max-width: 375px) {
+    body {
+      font-size: 14px;
+      padding: 0;
+      margin: 0;
+    }
+  
+    .main-nav {
+      flex-direction: column;
+      padding: 10px;
+    }
+  
+    .country {
+      justify-content: center;
+      margin-bottom: 10px;
+    }
+  
+    .nav-links ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .sub-nav ul {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+  
+    .header-section {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .header-left h3 {
+      font-size: 18px;
+    }
+  
+    .header-right img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .main-feature {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+  
+    .features-card {
+      width: 90%;
+      text-align: center;
+    }
+  
+    .categories .card {
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+  
+    .why .services {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .ratings {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .blog-container {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+  
+    .footer-section {
+      text-align: center;
+      margin: 10px 0;
+    }
+  
+    .buttons {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+  
+    .footer-bottom {
+      text-align: center;
+    }
+  }
+  
